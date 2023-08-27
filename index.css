@@ -75,6 +75,7 @@ body {
     border-radius: 50%;
     background-color: var(--neon-green);
     border: none;
+    cursor: pointer;
 }
 
 #dice-container:hover {
