@@ -17,11 +17,13 @@ body {
     padding: 0px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     background-color: var(--dark-blue);
     font-family: Manrope;
     box-sizing: border-box;
+    position: relative;
 }
 
 #main {
@@ -59,7 +61,7 @@ body {
     width: 444px;
     height: 16px;
     background: url(./images/pattern-divider-desktop.svg);
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 #dice-container {
@@ -72,12 +74,20 @@ body {
     height: 60px;
     border-radius: 50%;
     background-color: var(--neon-green);
+    border: none;
 }
 
 #dice-container:hover {
     box-shadow: 5px 5px 25px hsla(150, 100%, 66%, 0.805);
 }
 
+footer {
+    font-size: 10px;
+    margin: auto;
+    color: var(--light-cyan);
+    position: absolute;
+    bottom: 15px;
+}
 
 @media screen and (max-width: 540px) {
     #advice-container {
@@ -90,6 +100,6 @@ body {
         width: 295px;
         height: 16px;
         background: url(./images/pattern-divider-mobile.svg);
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 }
