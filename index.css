@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;500;700;800&family=Manrope:wght@800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--dark-blue);
+    font-family: Manrope;
+    box-sizing: border-box;
+}
+
+#main {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#advice-container {
+    width: 530px;
+    border-radius: 15px;
+    background-color: var(--dark-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 15px hsla(219, 19%, 24%, 0.239);
+    align-items: center;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+#advice-header {
+    color: var(--neon-green);
+}
+
+#advice-body {
+    color: var(--light-cyan);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#pattern-container {
+    width: 444px;
+    height: 16px;
+    background: url(./images/pattern-divider-desktop.svg);
+    margin-bottom: 40px;
+}
+
+#dice-container {
+    margin: auto;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+}
+
+#dice-container:hover {
+    box-shadow: 5px 5px 25px hsla(150, 100%, 66%, 0.805);
+}
+
+
+@media screen and (max-width: 540px) {
+    #advice-container {
+        width: max(320px, 80%);
+        padding: 30px 30px;
+        box-sizing: border-box;
+    }
+
+    #pattern-container {
+        width: 295px;
+        height: 16px;
+        background: url(./images/pattern-divider-mobile.svg);
+        margin-bottom: 40px;
+    }
+}
